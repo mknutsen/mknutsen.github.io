@@ -79,7 +79,7 @@ header h1 {
 
 header h2 {
   letter-spacing: -1px;
-  font-size: 24px;
+  font-size: 20px;
   /*color: #aaa;*/
 	color:#d5000d;
   font-weight: normal;
@@ -249,7 +249,7 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
 	color: #d5000d;
 }
 
