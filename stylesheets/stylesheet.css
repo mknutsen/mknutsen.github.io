@@ -195,7 +195,13 @@ pre code {
 ul, ol, dl {
   margin-bottom: 20px;
 }
-
+#bar{
+	background-color: #d5000d;
+	color:#ffffff
+}
+#bar a{
+	color:#e6e6e6
+}
 
 /* COMMON STYLES */
 
