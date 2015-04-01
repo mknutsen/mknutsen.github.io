@@ -150,9 +150,11 @@ pull-up near the end.
 <font color="d3d3d3">//checks if the word + any letter could lead to another word</font>
 <font color = "#FF6600">if</font>(<font color = "#0099FF">checkStem</font>(word) == <font color="green">false</font>)
   return foundWordPaths;<font color="d3d3d3">//if not, return the list as it stands</font>
+  
 <font color="d3d3d3">//if there could be other words to be found
 //look at the surrounding tiles</font>
 <font color="green">List</font> surroundings = <font color = "#0099FF">getSurroundings</font>(word.<font color = "#0099FF">get</font>(word.<font color = "#0099FF">size()</font>-1));
+
 <font color="d3d3d3">//for each of the surrounding tiles
 <font color = "#FF6600">for</font>(int i=0;surroundings.<font color = "#0099FF">size()</font>>i;i++){
   <font color = "#FF6600">if</font>(!word.<font color = "#0099FF">contains</font>(surroundings.<font color = "#0099FF">get</font>(i))){
