@@ -17,13 +17,6 @@
   <body>
     <div id="container">
       <div class="inner">
-          <!--<center><div id="bar">
-            <a href="#contact">contact me</a>
-            -
-            <a href="#about">about me</a>
-            -
-            <a href="#projects">cool projects</a>
-          </div></center>-->
         <header>
           <h1>Max Knutsen</h1>
           <h2>I do stuff sometimes</h2>
@@ -96,15 +89,16 @@
 // of the screen opposite the opponent</font>
 <font color = "#FF6600">public void</font> <font color = "#0099FF">run</font>() {
   <font color = "#FF6600">while</font> (isOn()) {
-    <font color = "#0099FF">getPlayer</font>().<font color = "#0099FF">setGoal</font>(<font color = "#0099FF">getPlayer</font>().<font color = "#0099FF">getOpponent</font>().<font color = "#0099FF">getY</font>()
-      <font color = "#0099FF">getPlayer</font>().<font color = "#0099FF">getOpponent</font>().<font color = "#0099FF">getHeight</font>() / 2 >
-      (<font color = "#0099FF">getPlayer</font>().<font color = "#0099FF">getYLimit</font>()/ 2) ? 0 : <font color = "#0099FF">getPlayer</font>().<font color = "#0099FF">getYLimit</font>());
+    <font color = "#0099FF">setGoal</font>(<font color = "#0099FF">getOpponent</font>().<font color = "#0099FF">getY</font>()
+      <font color = "#0099FF">getOpponent</font>().<font color = "#0099FF">getHeight</font>() / 2 >
+      (<font color = "#0099FF">getYLimit</font>()/ 2) ? 0 : <font color = "#0099FF">getYLimit</font>());
         <font color = "#0099FF">chill</font>(); <font color="d3d3d3">// take time before calculating the next path</font>
   }
 }</code></pre>
 You can <a href="images/Game.jar">download</a> it or you can watch a video of me playing below:
 </p><iframe width="420" height="315" src="https://www.youtube.com/embed/eszOgim2u9g" frameborder="0" allowfullscreen></iframe>
-<p>I plan on expanding this project into neural networks in the near future.
+<p>
+  I plan on expanding this project into neural networks in the near future.
 </p>
 <h2>
   decision tree
@@ -150,8 +144,33 @@ pull-up near the end.
  </p><p>Here's the video we turned to demonstrate the game:</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FUAp8G69o78" frameborder="0" allowfullscreen></iframe>
-
-
+<p>I also took it upon myself to try to figure out how many words were on a given 5x5 boggle board.
+  To do this I just called this method on each cell:
+<pre><code>
+<font color="d3d3d3">//checks if the word + any letter could lead to another word</font>
+<font color = "#FF6600">if</font>(<font color = "#0099FF">checkStem</font>(word) == <font color="green">false</font>)
+  return foundWordPaths;<font color="d3d3d3">//if not, return the list as it stands</font>
+<font color="d3d3d3">//if there could be other words to be found
+//look at the surrounding tiles</font>
+<font color="green">List</font> surroundings = <font color = "#0099FF">getSurroundings</font>(word.<font color = "#0099FF">get</font>(word.<font color = "#0099FF">size()</font>-1));
+<font color="d3d3d3">//for each of the surrounding tiles
+<font color = "#FF6600">for</font>(int i=0;surroundings.<font color = "#0099FF">size()</font>>i;i++){
+  <font color = "#FF6600">if</font>(!word.<font color = "#0099FF">contains</font>(surroundings.<font color = "#0099FF">get</font>(i))){
+    word.<font color = "#0099FF">add</font>(surroundings.<font color = "#0099FF">get</font>(i));
+      <font color = "#0099FF">checkPath</font>(word, foundWordPaths, foundWords);<font color="d3d3d3">//recursively repeats</font>
+  }
+}
+</code></pre></p></font>
+<p>
+  Then it spits out the result:
+  <pre>
+  <code>
+    word count:336
+    score:592
+    Longest Word: RESIDERS
+  </code>
+</pre>
+</p>
         <footer>
           This page was based on <a href="http://pages.github.com">GitHub Pages</a> Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
           <br>The icons come from <a href="http://www.valiantpixels.com/moonshine/">Moonshine by Valiant Pixels.</a>
