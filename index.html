@@ -101,7 +101,7 @@ UMBC’s robotics club, <a href="http://my.umbc.edu/groups/retrieverrobotics">Re
 which was an experience.</p>
 <p>
  We work on competition robots for VEX U. In the video
-below, you can see our robots in blue beating the College of Southern Maryland in a <a href="http://www.vexrobotics.com/wiki/Toss_Up"> Vex Toss Up</a> match
+below, you can see our robots in blue beating the College of Southern Maryland in a <a href="http://www.VEXrobotics.com/wiki/Toss_Up"> VEX Toss Up</a> match
 last year. The robot I spent the most time working on is the one that ends up doing the
 pull-up near the end.
 </p>
@@ -116,15 +116,17 @@ pull-up near the end.
    of the letters on the board, the algorithm looks at the adjacent tiles and sees if
    any of those can help it form a word, and it can tell if it forms a word based on
    whether or not those two letters in sequence have any children in the trie.
-   In a group project in the spring of 2014, my boggle game was turned into an android app.
+   As a part of a group project in the spring of 2014, my boggle game was turned into an android app.
    <img src="images/img_1.png" alt="" align="center"/>
-   My work on the project was mostly the art and the back-end, data structures side.
+   My work on the project was mostly the art and the back-end of the app.
  </p><p>Here's the video we turned to demonstrate the game:</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FUAp8G69o78" frameborder="0" allowfullscreen></iframe>
 <p>I also took it upon myself to try to figure out how many words were on a given 5x5 boggle board.
-  To do that, there has to be an algorithm that looks at each tile and recursively develops a list of strings that could be made starting at that tile. To do this efficiently, I added a method to the trie that checks if a given string is a stem for any words. If and only if the given string has the possibility of making a word does the algorithm continue to run.
-Because of this optimization, I run it and then it instantly spits out the result:
+  To do that, there has to be an algorithm that looks at each tile and recursively develops a list of strings that could be made starting at that tile.
+  To do this efficiently, I added a method to the trie that checks if a given string is a stem for any words. If and only if the given string has the
+  possibility of making a word does the algorithm continue to run.
+Because of this optimization, I run it and it instantly spits out the result:
   <pre>
   <code>
     word count:336
