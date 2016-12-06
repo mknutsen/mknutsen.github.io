@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-61636979-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/icon.ico"/>
+    <meta name="theme-color" content="#F3F3F3">
+    <title>Max Knutsen</title>
+</head>
+
+<section>
+    <div id="container">
+        <div class="inner">
+            <header>
+                <h1>Max Knutsen</h1>
+
+                <h2>I do cool stuff sometimes.</h2>
+            </header>
+            <hr>
+            <section id="main_content">
+                <center>
+                    <table border="0">
+                        <tr>
+                            <td><a href="images/MaxKnutsenResume.pdf"><img src="images/resume.png" width=40
+                                                                           height=40/></a></td>
+                            <td><a href="mailto:mknutse1@umbc.edu"><img src="images/email.svg" width=40 height=40/></a>
+                            </td>
+                            <td><a href="http://www.github.com/mknutsen"><img src="images/github.png" width=40
+                                                                              height=40/></a></td>
+                            <td><a href="http://www.linkedin.com/in/maxknutsen/en"><img src="images/linkedin.png"
+                                                                                        width=40
+                                                                                        height=40/></a></td>
+							<td><a href="index4.html"><img src="images/back.png"
+                                                                                        width=40
+                                                                                        height=40/></a></td>
+                        </tr>
+                    </table>
+                </center>
+                <hr>
+                <h1>
+                    <a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a></h1>
+                     </section>
+                     <h1>
+                    <a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>cool
+                    projects</h1>
+                <a href="http://www.github.com/mknutsen/BoggleFinal"><img align="right" src="images/github.png" width=40
+                                                                          height=40/></a>
+
+                <h2 id="checkers">
+                    checkers
+                </h2>
+
+                As a final project for my AI class, I worked with a small team on implementing the classic board
+                game checkers in Java with Swing and developing an AI to play against. To pick the ideal move, an
+                implementation of the minimax theorm was used to algorithmically minimize the worst case scenario.
+                To allow the computer to manage the huge number of available moves, the alpha beta pruning technique
+                was added. This technique prevents the computer from exploring movement options that will never be
+                considered because the optimal move has already been discovered. Download the game <a
+                    href="images/Checkers.jar">here</a> or watch me play it below. </p>
+
+                <iframe width="652" height="360" src="https://www.youtube.com/embed/Slh2TXzHdVA" frameborder="0"
+                        allowfullscreen></iframe>
+                <a href="http://www.github.com/mknutsen/ShootingGameAI"><img align="right" src="images/github.png"
+                                                                             width=40
+                                                                             height=40/></a>
+
+                <h2 id="ai">
+                    real time artificial intelligence
+                </h2>
+
+                <p>
+                    Starting recently, I built a simple two dimensional shooting game. The player can move up and down
+                    as
+                    well as shoot and shield. The objective of this project is to practice implementing a small scale
+                    version of a <a
+                        href="http://www.reddit.com/r/explainlikeimfive/comments/15k3f4/how_does_ai_work_in_video_games/">real
+                    time video game AI</a>. Currently, the AI consists of a state
+                    detection mechanism with several pre-programmed maneuvers to switch contextually based on the
+                    situation.
+                    <img src="images/img_2.png" alt="" align="center"/>
+                    You can <a href="images/RealTimeAIMaxKnutsen.jar">download</a> it or you can watch a video of me
+                    playing below:
+                </p>
+                <iframe width="652" height="360" src="https://www.youtube.com/embed/eszOgim2u9g" frameborder="0"
+                        allowfullscreen></iframe>
+                <p>
+                    I plan on expanding this project into <a
+                        href="http://en.wikipedia.org/wiki/Artificial_neural_network">neural
+                    networks</a> in the near future.
+                </p>
+
+                <a href="http://www.github.com/mknutsen/Connect_4"><img align="right" src="images/github.png" width=40
+                                                                        height=40/></a>
+
+                <h2 id="connectfour">
+                    decision tree
+                </h2>
+
+                <p>
+                    A few years ago, I was taking a self-led class. Over the course of the year, I was to
+                    develop one application that I was proud of to present to the class.
+                    The result was a computer that plays <a href="http://en.wikipedia.org/wiki/Connect_Four">Connect
+                    Four</a>. Using a data structure that I
+                    based on the <a href="https://en.wikipedia.org/wiki/Minimax">minimax theorem</a>, the computer could
+                    look a certain number (user defined)
+                    of moves into the future. Using its knowledge of the future, it determined the best
+                    move by deciding which move is most likely to lead to the desired board position.
+                    When deciding, it takes into account the best moves for itself, as well as the best
+                    moves for its opponent. The end result is a computer that's pretty hard to beat!</p>
+
+                <p>
+                    <a href="images/ConnectFourAIMaxKnutsen.jar">Download</a> here to try it out!
+                </p>
+                <iframe width="652" height="360" src="https://www.youtube.com/embed/QrpilHJsj74" frameborder="0"
+                        allowfullscreen></iframe>
+
+
+                <a href="http://github.com/emanguy/VexTests"><img align="right" src="images/github.png" width=40
+                                                                  height=40/></a>
+
+                <h2 id="robots">robotics</h2>
+
+                <p>
+                    I was one of the founding members of
+                    UMBC’s robotics club, <a href="http://my.umbc.edu/groups/retrieverrobotics">Retriever Robotics</a>.
+                    I
+                    have been one of the principle programmers since the club's inception and was also the treasurer for
+                    the
+                    2014-2015 academic year.</p>
+
+                <p>
+                     We work on competition robots for VEX U. In the video
+                    below, you can see our robots in blue beating the College of Southern Maryland in a <a
+                        href="http://www.VEXrobotics.com/wiki/Toss_Up"> VEX Toss Up</a> match
+                    last year. The robot I spent the most time working on is the one that ends up doing the
+                    pull-up near the end.
+                </p>
+                <iframe width="652" height="360" src="https://www.youtube.com/embed/lInjjlw6t0U" frameborder="0"
+                        allowfullscreen></iframe>
+
+                <a href="http://www.github.com/mknutsen/BoggleFinal"><img align="right" src="images/github.png" width=40
+                                                                          height=40/></a>
+
+                <h2 id="boggle">
+                    boggle
+                </h2>
+
+                <p>
+                    I made the game <a href="http://en.wikipedia.org/wiki/Boggle">boggle</a> in java as a way to
+                    experiment
+                    with different data structures.
+                    After trying multiple different ways of storing the dictionary to check the words against,
+                    I decided to go with a <a href="http://en.wikipedia.org/wiki/Trie">trie</a> because it seemed to
+                    preform
+                    at least as fast as a hashtable with a significantly smaller memory footprint. Try it out <a
+                        href="images/BoggleMaxKnutsen.jar">here</a>. </p>
+
+                <p>
+                    As a part of a group project in the spring of 2014, my boggle game was turned into an Android app.
+                    <img src="images/img_1.png" alt="" align="center"/>
+                    My work on the project was mostly the art and the back-end of the app.
+                </p>
+
+                <p>Here's the video we turned to demonstrate the game, which you can also <a href="images/Bog.apk">download</a>
+                    (if you have an Android phone):</p>
+
+                <iframe width="652" height="360" src="https://www.youtube.com/embed/FUAp8G69o78" frameborder="0"
+                        allowfullscreen></iframe>
+                <p>I also took it upon myself to try to figure out how many words were on a given 5x5 boggle board.
+                    To do that, there has to be an algorithm that looks at each tile and recursively develops a list of
+                    strings that could be made starting at that tile.
+                    To do this efficiently, I added a method to the trie that checks if a given string is a stem for any
+                    words. If and only if the given string has the
+                    possibility of making a word does the algorithm continue to run.
+                    Because of this optimization, I run it and it instantly spits out the result:
+  <pre>
+  <code>
+      word count:336
+      score:592
+      Longest Word: RESIDERS
+  </code>
+</pre>
+
+        <footer>
+            This page was based on <a href="http://pages.github.com">GitHub Pages</a> Tactile theme by <a
+                href="https://twitter.com/jasonlong">Jason Long</a>.
+            <br>The icons come from <a href="http://www.valiantpixels.com/moonshine/">Moonshine by Valiant
+            Pixels.</a>
+        </footer>
+    </div>
+    </div>
+</section>
+</body>
+</html>
