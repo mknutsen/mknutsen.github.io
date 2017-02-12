@@ -1,11 +1,11 @@
 function showDiv(what) {
     if(document.getElementById('main').style.display == "") {
-        document.getElementById('main').style.display = "none";
-        document.getElementById('projects').style.display = "";
+        $('#main').toggle();
+        $('#projects').toggle();
 
     } else{
-        document.getElementById('main').style.display = "";
-        document.getElementById('projects').style.display = "none";
+        $('#projects').toggle();
+        $('#main').toggle();
     }
 
     $(what).find('i').toggleClass('fa-folder-o fa-folder-open-o');
