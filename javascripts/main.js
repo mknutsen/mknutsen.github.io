@@ -2,11 +2,12 @@ function showDiv(what) {
     if(document.getElementById('main').style.display == "") {
         document.getElementById('main').style.display = "none";
         document.getElementById('projects').style.display = "";
-        what.src = 'images/back.png';
 
     } else{
         document.getElementById('main').style.display = "";
         document.getElementById('projects').style.display = "none";
-        what.src = 'images/portfolio3.png';
     }
+
+    $(what).find('i').toggleClass('fa-folder-o fa-folder-open-o');
 }
+//<i class="fa fa-undo fa-3x"></i>

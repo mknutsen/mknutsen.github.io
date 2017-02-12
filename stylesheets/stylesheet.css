@@ -42,6 +42,7 @@ q:before, q:after {
 	content: none;
 }
 table {
+  table-layout: fixed;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -58,6 +59,9 @@ body {
 
 a {
   color: #cc3300;
+}
+td a {
+  color: black;
 }
 a:hover {
   color: #cc0000;
@@ -372,6 +376,9 @@ footer a:hover {
     width: 94%;
     margin: 0 auto;
   }
+}
+#pro-icon{
+  cursor: pointer;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

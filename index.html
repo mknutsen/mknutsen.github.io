@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-61636979-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script src="https://use.fontawesome.com/8372bff947.js"></script>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
-    <![endif]-->
 
     <script src="javascripts/main.js"></script>
     <link rel="shortcut icon" href="images/icon.ico"/>
@@ -40,7 +22,6 @@
         <div class="inner">
             <header>
                 <h1>Max Knutsen</h1>
-
                 <h2>I do cool stuff sometimes.</h2>
             </header>
             <br>
@@ -48,19 +29,26 @@
                 <center>
                     <table border="0">
                         <tr>
-                            <td><a href="images/MaxKnutsenResume.pdf"><img src="images/resume.png" width=40
-                                                                           height=40/></a></td>
-                            <td><a href="mailto:mknutse1@umbc.edu"><img src="images/email.svg" width=40 height=40/></a>
-                            </td>
-                            <td><a href="http://www.github.com/mknutsen"><img src="images/github.png" width=40
-                                                                              height=40/></a></td>
-                            <td><a href="http://www.linkedin.com/in/maxknutsen/en"><img src="images/linkedin.png"
-                                                                                        width=40
-                                                                                        height=40/></a></td>
-                            <td>
-                                <input type="image" name="answer" src="images/portfolio3.png" onclick="showDiv(this)"
-                                       width=40
-                                       height=40/></td>
+                            <td><a href="images/MaxKnutsenResume.pdf">
+                                <i class="fa fa-file-text-o fa-2x"></i>
+                            </a></td>
+                            <td><a href="http://keybase.io/mknutsen">
+                                <i class="fa fa-key fa-2x"></i>
+                            </a></td>
+                            <td><a href="mailto:mknutsen99@gmail.com">
+                                <i class="fa fa-envelope-o fa-2x"></i>
+                            </a></td>
+                            
+                            <td><a href="http://www.linkedin.com/in/maxknutsen">
+                                <i class="fa fa-linkedin fa-2x"></i>
+                            </a></td>
+                            <td><div id="pro-icon" onclick="showDiv(this)">
+                                <a><i class="fa fa-folder-o fa-2x"></i></a>
+                            </div></td>
+
+                            <td><a href="http://www.github.com/mknutsen">
+                                <i class="fa fa-github-alt fa-2x"></i>
+                            </a></td>
                         </tr>
                     </table>
                 </center>
