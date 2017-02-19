@@ -56,12 +56,18 @@ body {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   color: #323232;
 }
+body i {
+  color:#333333;
+}
+body i:hover{
+  color:#cc3300;
+}
 
 a {
   color: #cc3300;
 }
 td a {
-  color: black;
+  color: #333333;
 }
 a:hover {
   color: #cc0000;
