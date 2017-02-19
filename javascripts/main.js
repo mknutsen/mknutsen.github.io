@@ -1,11 +1,11 @@
 function showDiv(what) {
     if(document.getElementById('main').style.display == "") {
-        $('#main').slideToggle("fast",function(){
+        $('#main').slideToggle("slow",function(){
         	$('#projects').slideToggle("slow");
         });
 
     } else{
-        $('#projects').slideToggle("fast",function(){
+        $('#projects').slideToggle("slow",function(){
         	$('#main').slideToggle("slow");
         });
     }
