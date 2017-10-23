@@ -351,15 +351,53 @@ footer a:hover {
     margin: 0 auto;
   }
 }
-#pro-icon{
-  cursor: pointer;
-}
-#pro-icon{
-  cursor: pointer;
-}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 400px) and (max-width: 900px) {
+  header {
+    font-size: .7em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: .3em
+  }
+  #downloads {
+    margin-bottom: 25px;
+  }
+  #download-zip, #download-tar-gz {
+    display: none;
+  }
+  .inner {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 400px) {
+  header {
+    padding-top: 10px;
+    /*font-size: 1em;*/
+    padding-bottom: 10px;
+  }
+  header h1{
+    font-size: 3.5em;
+  }
+  header h2{
+    font-size: 1.1em;
+  }
+  p {
+    font-size: .3em
+  }
+  #downloads {
+    margin-bottom: 25px;
+  }
+  #download-zip, #download-tar-gz {
+    display: none;
+  }
+  .inner {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
