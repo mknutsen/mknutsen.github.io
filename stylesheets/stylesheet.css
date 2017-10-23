@@ -84,7 +84,8 @@ header {
 header h1 {
   font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
   letter-spacing: -1px;
-  font-size: 90px;
+  font-size: 5.5em;
+  /*font-size: 90px;*/
   color: black;
   line-height: 1.2;
 }
@@ -92,7 +93,8 @@ header h1 {
 header h2 {
   font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
   letter-spacing: -1px;
-  font-size: 23px;
+  font-size: 1.4em;
+  /*font-size: 23px;*/
   /*color: #aaa;*/
   color: #cc3300;
   font-weight: normal;
@@ -320,18 +322,37 @@ footer a:hover {
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
-
-/* #Media Queries
-================================================== */
-
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (min-width: 900px) {
-  
-  .inner {
+.inner {
     width: 650px;
     top:30%;
     margin: 0 auto;
   }
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 900px) {
+  header {
+    font-size: .7em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: .3em
+  }
+  #downloads {
+    margin-bottom: 25px;
+  }
+  #download-zip, #download-tar-gz {
+    display: none;
+  }
+  .inner {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+#pro-icon{
+  cursor: pointer;
 }
 #pro-icon{
   cursor: pointer;
