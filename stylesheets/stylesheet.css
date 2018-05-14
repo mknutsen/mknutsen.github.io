@@ -77,8 +77,8 @@ a:hover {
 header {
   line-height:.9;
   text-align: center;
-  padding-top: 20%;
-  padding-bottom: 50px;
+  padding-top: 40%;
+  padding-bottom: 1%
 }
 
 header h1 {
@@ -333,9 +333,9 @@ footer a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 500px) {
   header {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     /*font-size: 1em;*/
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
   }
   header h1{
     font-size: 3.0em;
