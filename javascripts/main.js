@@ -15,6 +15,7 @@ $(document).ready(function(){
 
         clipboard.on('success', function(e) {
             var element = document.getElementsByClassName("email")[0]
+                $('[data-toggle="tooltip"]').tooltip();  
 
             // if(isTouchDevice()===false) {
                 $(element).attr('title', 'copied!')
