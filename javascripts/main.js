@@ -16,11 +16,11 @@ $(document).ready(function(){
         clipboard.on('success', function(e) {
             var element = document.getElementsByClassName("email")[0]
 
-            if(isTouchDevice()===false) {
+            // if(isTouchDevice()===false) {
                 $(element).attr('title', 'copied!')
                     .tooltip('fixTitle')
                     .tooltip('show');
-            }
+            // }
         });
 
         clipboard.on('error', function(e) {
