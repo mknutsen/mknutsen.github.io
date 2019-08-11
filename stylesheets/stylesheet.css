@@ -83,7 +83,7 @@ header {
 
 header h1 {
   font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-  letter-spacing: -1px;
+  /*letter-spacing: -1px;*/
   font-size: 5.5em;
   /*font-size: 90px;*/
   color: black;
@@ -92,8 +92,8 @@ header h1 {
 
 header h2 {
   font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-  letter-spacing: -1px;
-  font-size: 1.4em;
+  /*letter-spacing: -1px;*/
+  font-size: 2em;
   /*font-size: 23px;*/
   /*color: #aaa;*/
   color: #cc3300;
@@ -327,6 +327,58 @@ footer a:hover {
     top:30%;
     margin: 0 auto;
   }
+
+
+.blah i:hover{
+  color: #323232;
+  /*color:#cc3300;*/
+}
+
+.blah td a {
+  /*color: #333333;*/
+  color: #cc3300;
+}
+.blah {
+  font-size: 1em;
+  line-height: 1.5;
+  /*background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;*/
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: #323232;
+}
+
+table {
+  width: 100%;
+  border: 0px solid #ebebeb;
+}
+.blah th {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: normal;
+  /*background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;*/
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: #323232;
+}
+
+.blah td {
+  font-size: 1em;
+  border: 0px solid #aaaa;
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+  /*font-weight: 300;*/
+}
+
+.iconthing {
+  text-align:center;
+  color:#999966;
+
+  /*position: absolute;*/
+  top: 50%;
+  left: 50%;
+}
 /* #Media Queries
 ================================================== */
 

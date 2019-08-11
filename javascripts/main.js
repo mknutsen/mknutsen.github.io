@@ -32,7 +32,7 @@ function showDiv(what) {
     // }
 
     var current = document.getElementById("myHeader").style.paddingTop;
-    $(what).find('i').toggleClass('fa-folder-o fa-folder-open-o');    
+    $(what).find('i').toggleClass('fa-folder fa-folder-open');    
     if (current == "0px") {
         $('#projects').slideToggle("slow", function(){
             $('#myHeader').animate({'paddingTop' : "40%"}, 'slow');
