@@ -1,5 +1,11 @@
+function isTouchDevice(){
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+}
+
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+    if(isTouchDevice()===false) {
+        $('[data-toggle="tooltip"]').tooltip();  
+    }
     console.log("please hire me");
     var clipboard = new ClipboardJS('.email', {
             text: function() {
@@ -9,9 +15,12 @@ $(document).ready(function(){
 
         clipboard.on('success', function(e) {
             var element = document.getElementsByClassName("email")[0]
-            $(element).attr('title', 'copied!')
-                .tooltip('fixTitle')
-                .tooltip('show');
+
+            if(isTouchDevice()===false) {
+                $(element).attr('title', 'copied!')
+                    .tooltip('fixTitle')
+                    .tooltip('show');
+            }
         });
 
         clipboard.on('error', function(e) {
