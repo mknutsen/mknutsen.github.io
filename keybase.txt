@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/mknutsen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.maxknutsen.com
+  * I am mknutsen (https://keybase.io/mknutsen) on keybase.
+  * I have a public key with fingerprint B357 2EFC 74E6 6C1F 6E97  F305 693B 3094 55CE 49E7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01202c97012b2d34359d170115724c4ed018162b3c9c52b0f9299dc02f7af0d08b600a",
+            "fingerprint": "b3572efc74e66c1f6e97f305693b309455ce49e7",
+            "host": "keybase.io",
+            "key_id": "693b309455ce49e7",
+            "kid": "010174a317cc9831e6c5f5dd9605063b025b231131c1a45c8e1c690990f2c215bb5e0a",
+            "uid": "a3cd9359b4974a3558c81cf08f3ac519",
+            "username": "mknutsen"
+        },
+        "service": {
+            "hostname": "www.maxknutsen.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486894433,
+    "expire_in": 157680000,
+    "prev": "d337aa54188d57e11ebb6c3cf588406106d3da3bcb00f15d0b0936b8e2322429",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMNtAnicbZJ9TFZVHMcfDExIEBEsrcfyNl/izXPuuee+PJRjuTFwYSPGiwI93nvu
+uc9zA54HnhfAAKM15yLXCmgOhwYlS6UCEikZZjiMMRoJhhAarU0BIUcR4ISc3Yfh
+f51/zn7nfL+f8/2d/bqDnzAF+elxoCatP2nCr6+rzmvKrMdyKaM41UOMpZTJpcsb
+zVOp22PN1VXGwgDIApZIgrErrIo4hCUVGhXEAssRjqoAipBnFUQkglkFaBIrSSoB
+rCbIGlCBqPAAyEw0o+kOG3UVuHSHx8AqyPBTjQgc5XkCNZ5KgoYA5iWkICBxGBPK
+SVQwjHan2+cwwimym8bqTuPMKKzL8f5H/zg3gAInIygQIokIUp5gDauqxAMMeKQA
+FissghBBAmUOE5FCwktAkoDGEhZiRcF0Obd3GScjokpG7won+agYi0SERAOihmSC
+oeQTuqnLIedTQ52f6/B63NTBlEczxmmRTqjvY32drCiKi4tj8+WSFV0sceYbhAKX
+0+Mkzjzj3u7xFFh8ds+hgmU9VawrJKuiO1TjMw1DEXW5daeDsUBDSTy6Dw05kRcl
+jkMomqElBbqLWnWfAgu8CIzle4YWGUgVIUGWMQdFUcUChZAqCk8Q0bAocoCHgFeR
+KiOFKABoEKtAARLiFZGyiGU51teymxY6nIxFNGLKNgPp1m0O2eN1Uab8Sle2v8kv
+yLQ6YJVvyExBgaGPRy8hfd3DjbDhkTdVscnqmdaUzQFy2L2xY7Q6ciLHVpcwO7R2
+w3xYxv3ov5Z+PNmTcnCuZNuwNF+P8oLEuPzAK11zr/mjqjWtU17p584nz19c8pof
+flF5digiwhHT9cu3ZqFntAJ3OO6UnbqUWLNU3vTc2cSusqSa1OO3nE1R02NTX47c
+Z/Y2fvDJg3TL2EDK4uXzpb0H8kfS9s0kJq9z37iavDg/NO7UV7Xte6M0/aOK0Jav
+4u9c+65fDPx07hp68TCDF5re2Xp06KnBX68fCbht/v35nFunT6SsL1v85ocXEo70
+hJfPwZsTw5sGJv4QraOWV5k3Tc+Ys3qjsqsWMmcbhsL5rfFxtb01tSa71u4e8FzW
+7nY1vrczZLejquLvytTI+W2TSYmzTfbPtwfvqTwwU0L/Ub8/c8nt+finl58VK2Zf
+OZU5+qCe7KoSrvcPbjxh7x7HyS/1DFdumln9KDwHZr5VG9K4dyoPZYH2/embG6qz
+Dn54btYUujjObyn+t0NYm9Hc4V8d4Tp+w9w8oZ3uPvnb9Iye+3Zy6sWMq9t3BK8+
+/L7yp3VnOjsSNflu4YaQGK2zokX2ro9UMlrrLkx3q69bLzQ9XRPfuHvh9vhC+2d6
+X19L2tc7tgzebGi7O1zYVpztKbvXaavY1XcscE33WMNoZltucvO5uLCIlvKw/dRe
+6ZdgZveMNMZMHv0P+XrDgA==
+=tgFx
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mknutsen
+
+==================================================================
