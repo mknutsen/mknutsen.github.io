@@ -343,16 +343,24 @@ form {
   }
 
 
-.blah a:hover{
+.playdate, .seq, .checkers, .realtimeai, .connect4 a:hover{
   color: #cc3300;
   /*color:#cc3300;*/
 }
 
-.blah td a {
+.playdate,
+.seq,
+.checkers,
+.realtimeai,
+.connect4 td a {
   /*color: #333333;*/
   color: #cc3300;
 }
-.blah {
+.playdate,
+.seq,
+.checkers,
+.realtimeai,
+.connect4 {
   font-size: 1em;
   line-height: 1.5;
   /*background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;*/
@@ -367,7 +375,11 @@ table {
 
   /*border-collapse: collapse;*/
 }
-.blah th {
+.playdate,
+.seq,
+.checkers,
+.realtimeai,
+.connect4 th {
   font-size: 1em;
   line-height: .9;
   font-weight: normal;
@@ -380,7 +392,11 @@ table {
   line-height:1;
 }
 
-.blah td {
+.playdate,
+.seq,
+.checkers,
+.realtimeai,
+.connect4 td {
   font-size: 1em;
   border: 0px solid #aaaa;
   font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -391,13 +407,20 @@ table {
   line-height:1;
   /*font-weight: 300;*/
 }
-.blah tr {
+.playdate,
+.seq,
+.checkers,
+.realtimeai,
+.connect4 tr {
   /*padding: 5px;*/
 
   padding-bottom: 1em;
 }
-
-.blah p {
+iframe {
+  width: 560;
+  height: 315;
+}
+.playdate, .seq, .checkers, .realtimeai, .connect4 p {
   font-size: 1em;
     border: 0px solid #aaaa;
     font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -421,6 +444,42 @@ table {
 header h2,h2 {
   padding-bottom: 8px;
 }
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background: #CCC
+}
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  background: #CCC
+}
+
+.h_iframe {
+  position: relative;
+  padding-top: 56%;
+}
+
+.h_iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /* #Media Queries
 ================================================== */
 
@@ -439,6 +498,10 @@ header h2,h2 {
     font-weight: 400;
     font-size: 1.4em;
     padding-bottom: 0px;
+  }
+  iframe {
+    width: 560;
+    height: 315;
   }
   .custom-p2 {
     /* text-align: bottom;
